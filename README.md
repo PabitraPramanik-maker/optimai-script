@@ -1,22 +1,29 @@
-# optimai-script
-# OptimAI Multi-Node Auto Ref Script
-
-**RAJA RX SCRIPT** — A Python-based multi-node dashboard and auto referral simulator for OptimAI.
-
-## Features
-- Supports multiple accounts (access tokens)
-- Assigns separate proxies per node
-- Colorful terminal output with status, points, and rate tracking
-- Easily configurable via `tokens.txt` and `proxies.txt`
-
-## Requirements
-- Python 3.7+
-- `rich` and `pyfiglet` packages (install via `pip install rich pyfiglet`)
-
 ## Setup
-1. Create `tokens.txt` and add one access token per line.
-2. Create `proxies.txt` and add one HTTP proxy per line (e.g., `http://123.45.67.89:8080`).
-3. Run the script:
 
-```bash
+1. Clone the repository or download the script files.
+
+git clone https://github.com/PabitraPramanik-maker/optimai-script.git
+cd optimai-script
+
+2.Create a file named tokens.txt in the project folder and add your OptimAI access tokens, one per line:
+
+your_access_token_1
+2..
+3...
+
+3.Create a file named proxies.txt in the project folder and add your HTTP proxies, one per line, in this format:
+http://123.45.67.89:8080
+http://98.76.54.32:3128
+
+If you do not want to use proxies, leave this file empty or add one line with None.
+
+4.Install required Python packages:
+
+pip install rich pyfiglet
+
+5.Run the script:
 python optimx.py
+
+git add README.md
+git commit -m "Update README with Setup instructions"
+git push origin main
