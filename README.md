@@ -1,29 +1,58 @@
-## Setup
+# OptimAI Multi-Node Auto Referral Script  
+**RAJA RX SCRIPT** — A Python-based multi-node dashboard and auto referral simulator for OptimAI.
 
-1. Clone the repository or download the script files.
+## Features
 
-git clone https://github.com/PabitraPramanik-maker/optimai-script.git
-cd optimai-script
+- Supports multiple accounts with access tokens  
+- Assigns separate proxies per node  
+- Colorful terminal output showing status, points, and increase rate  
+- Easy configuration via `tokens.txt` and `proxies.txt`  
+- Auto detects nodes and manages connections
 
-2.Create a file named tokens.txt in the project folder and add your OptimAI access tokens, one per line:
+## Requirements
 
-your_access_token_1
-2..
-3...
+- Python 3.7 or higher  
+- Install required packages: `pip install rich pyfiglet`
 
-3.Create a file named proxies.txt in the project folder and add your HTTP proxies, one per line, in this format:
-http://123.45.67.89:8080
-http://98.76.54.32:3128
+## Installation
 
-If you do not want to use proxies, leave this file empty or add one line with None.
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/PabitraPramanik-maker/optimai-script.git
+```bash
+   cd optimai-script
+   ```
 
-4.Install required Python packages:
+2. **Install Requirements:**
+   ```bash
+   pip install rich pyfiglet
 
-pip install rich pyfiglet
+   ```
 
-5.Run the script:
+## Configuration
+
+- **tokens.txt: Add your OptimAI access tokens, one per line:
+  ```bash
+   your_access_token_1
+   your_access_token_2
+   your_access_token_3
+
+  ```
+
+- **proxy.txt:** You will find the file `proxy.txt` inside the project directory. Make sure `proxy.txt` contains data that matches the format expected by the script. Here are examples of file formats:
+  ```bash
+    ip:port # Default Protcol HTTP.
+    protocol://ip:port
+    protocol://user:pass@ip:port
+  ```
+
+## Run
+
+```bash
 python optimx.py
 
-git add README.md
-git commit -m "Update README with Setup instructions"
-git push origin main
+```
+---
+
+If you found this project helpful, please ⭐ **Star** the repository on GitHub! It really helps us grow and improve. Thank you! 🙌
+
